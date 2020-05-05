@@ -140,8 +140,8 @@ if(cmd === `${prefix}purge`){
   message.channel.bulkDelete(args[0]).then(() => message.channel.send(`Purged ${messagesDeleted} messages`))
 }
 if(cmd === `${prefix}sendhtp`){
-   if(!message.member.hasPermission(["MANAGE_SERVER", "ADMINISTRATOR"])) return message.reply("You do not have sufficient permissions!")
-  if(!message.guild.me.hasPermission(["MANAGE_SERVER", "ADMINISTRATOR"])) return message.reply("I do not have sufficient permissions!")
+   if(!message.member.hasPermission(["MANAGE_MESSAGES", "ADMINISTRATOR"])) return message.reply("You do not have sufficient permissions!")
+  if(!message.guild.me.hasPermission(["MANAGE_MESSAGES", "ADMINISTRATOR"])) return message.reply("I do not have sufficient permissions!")
   let mrEmbed = new Discord.RichEmbed()
   .setTitle("This handy guide tell you how to use our ferries!")
   .setDescription("When you join a server, you will spawn at either Portavadie or Tarbert. This is where you spawn")
