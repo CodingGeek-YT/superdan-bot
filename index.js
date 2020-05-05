@@ -6,7 +6,7 @@ client.login(process.env.BOT_TOKEN)
 
 client.on("ready", async () => {
   console.log(`${client.user.username} has logged in!`)
-  client.user.setActivity("superdan", { type: "WATCHING" })
+  client.user.setActivity("Aurora Ferries", { type: "WATCHING" })
 })
 
 client.on("message", async message => {
