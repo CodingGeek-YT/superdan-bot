@@ -145,7 +145,7 @@ if(cmd === `${prefix}sendhtp`){
   let mrEmbed = new Discord.RichEmbed()
   .setTitle("This handy guide tell you how to use our ferries!")
   .setDescription("When you join a server, you will spawn at either Portavadie or Tarbert. This is where you spawn")
-  .setImage("https://imgur.com/a/X5Rxwvp/")
+  .setImage("https://i.imgur.com/lhyYEun_d.jpg?maxwidth=640&shape=thumb&fidelity=medium")
   message.channel.send({embed: mrEmbed})
   
 }
