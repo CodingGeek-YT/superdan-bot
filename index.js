@@ -119,7 +119,7 @@ if(cmd === `${prefix}meme`){
 if(cmd === `${prefix}ping`){
   message.channel.send("@everyone")
 }
-if(cmd === `${prefix}say`){
+if(cmd === `${prefix}announce`){
   if(!message.member.hasPermission(["MANAGE_MESSAGES", "ADMINISTRATOR"])) return message.reply("You do not have sufficient permissions!")
   if(!message.guild.me.hasPermission(["MANAGE_MESSAGES", "ADMINISTRATOR"])) return message.reply("I do not have sufficient permissions!")
   let argsresult;
